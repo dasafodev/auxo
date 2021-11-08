@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/candidatesPage.css";
 import { Header } from "../components/header";
+import { Link } from "react-router-dom";
 
 export const CandidatesPage = () => {
   const [candidates, setCandidates] = useState([]);
@@ -37,13 +38,20 @@ export const CandidatesPage = () => {
 
 const CandidateItem = ({ candidate, seed }) => {
   return (
-    <li className="candidate" key={candidate.name}>
+    <Link
+      to={{
+        pathname: "/candidate",
+        state: { candidate: candidate },
+      }}
+      className="candidate"
+      key={candidate.name}
+    >
       <img
         className="avatar"
         src={`https://avatars.dicebear.com/api/bottts/${seed()}.svg`}
         alt="avatar"
       />
       <p>{candidate.name}</p>
-    </li>
+    </Link>
   );
 };

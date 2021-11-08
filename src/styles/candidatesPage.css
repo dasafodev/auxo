@@ -27,3 +27,27 @@
 .candidate img {
   margin-right: 20px;
 }
+
+.list-videos{
+  display: flex;
+  flex-direction: column;
+}
+
+.video{
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.video-container{
+  display: flex;
+  position: relative;
+}
+
+.bottom-comments{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
+}
+.bottom-comments input{
+  margin-right: 10px;
+}

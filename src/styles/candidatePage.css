@@ -1,0 +1,17 @@
+.container-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  background-color: #f47174;
+  padding: 8px;
+  border-radius: 6px;
+  color: white;
+  margin-top: 5%;
+}
