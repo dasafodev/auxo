@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CandidatesPage } from "./pages/candidates";
@@ -7,6 +6,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/">
+          <CandidatesPage />
+        </Route>
+        <Route path="/candidate">
           <CandidatesPage />
         </Route>
       </Switch>
